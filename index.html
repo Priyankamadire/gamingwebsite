@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+    <title>Your Game Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: black;
+            color: #fff;
+        }
+
+        .parallax-section {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+  #about {
+    padding: 50px 0;
+    margin-top: 56px;
+    background-image: url('imagegun.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: black;
+    color: #fff;
+}
+
+#about .container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#about .col-lg-8 {
+    text-align: left;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+ 
+       
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://thumbs.dreamstime.com/b/play-win-neon-text-vector-design-template-gaming-neon-logo-light-banner-design-element-colorful-modern-design-trend-145326765.jpg" alt="Your Logo" class="rounded-end" height="50" width="150">
+                </a>
+                <button type="button" class="navbar-toggler btn btn-light" data-toggle="collapse" data-target="#menubar">
+                    <span class="navbar-toggler-icon btn btn-light"></span>
+                </button>
+                <div class="collapse navbar-collapse text-light" id="menubar">
+                    <ul class="navbar-nav col">
+                        <li class="nav-item col">
+                            <a class="nav-link bi bi-house-door-fill text-light" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link bi bi-info-circle-fill text-light" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link bi bi-camera-fill text-light" href="#media">Media</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link bi bi-newspaper text-light" href="#news">News</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link bi bi-cart-fill text-light" href="#purchase">Purchase</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link bi bi-instagram text-light" href="#social-media">Social Media</a>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link bi bi-telephone-fill text-light" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section id="hero">
+        <!-- Video Embed -->
+        <video autoplay muted loop>
+            <source src="Untitled_Project_V2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <!-- Your content goes here -->
+        </div>
+    </section>
+
+    <!-- About Section with Parallax Effect -->
+    <section id="about" class="parallax-section" data-aos="fade-up">
+        <br><br><br>
+        <div class="container" style="text-align: left;">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 text-dark"><em>Introducing GameForge</em></h2><br>
+                    <h4 class="text-dark">
+                        
+                       
+                        An exhilarating upcoming game that thrusts players into the heart of an immersive game development adventure!
+                        Embark on a journey through expansive code landscapes, bustling design realms, and renowned real-life gaming environments.
+                   </h4>
+                    <br>
+                    <h4  class="text-dark">
+                        Our game development experience offers intuitive coding controls, a sophisticated design system, and a compelling progression framework,
+                        allowing developers to find themselves deeply immersed in a world where every successful project feels truly gratifying.
+                    </h4>
+                    <h4 class="text-dark">
+                        Stay tuned as we work diligently to bring this extraordinary game development experience to life.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Media Section with Parallax Effect -->
+    <!-- Media Section with Bootstrap Cards -->
+    
+<section id="media" class="parallax-section" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.8NUBf3Xz4iS5xU7QQG_DDgHaEK&pid=Api&P=0&h=180" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text text-dark "> The gaming industry offers a diverse range of content, </p>
+                        <p class="card-text text-dark ">  including various genres such as action,</p>
+                        <p class="card-text text-dark ">adventure, role-playing, simulation, and esports.</p>
+                       
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.yDrWoJutl2YHzw4R0KdkVAHaEh&pid=Api&P=0&h=180" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <p class="card-text text-dark">The widespread availability of advanced gaming platforms</p>
+                      <p class="card-text text-dark"> gaming consoles, and mobile devices,</p>
+                       <p class="card-text text-dark">     has made gaming more accessible to a larger audience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.Oj8oGCQ8aSx1OydnYTvZRgHaEK&pid=Api&P=0&h=180" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <p class="card-text text-dark ">   Gamers can connect with friends and other players worldwide,</p>
+                        <p class="card-text text-dark">participating in collaborative missions, competitive matches,</p>
+                        <p class="card-text text-dark">     and expansive virtual worlds.                        </p>
+
+                     
+                         
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br><br><br>
+
+
+<section id="news">
+    <div class="container">
+        <h2 class="text-center mb-4">Latest News</h2>
+        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+
+                    <img src="https://metapress.com/wp-content/uploads/2021/03/Online-gaming-is-the-best-internet-Gaming-platform-right-now-.png" class="d-block w-100" alt="New21">
+                    <!-- Add caption or additional content for the first news item if needed -->
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.ateiamerica.com/wp-content/uploads/2021/05/08_14_35_gaming.jpg" class="d-block w-100" alt="New30">
+                    <!-- Add caption or additional content for the first news item if needed -->
+                </div>
+                <div class="carousel-item">
+                    <img src="https://thebusinessofesports.com/wp-content/uploads/2022/11/2022-VD-Gaming-Hub-KV_H-scaled-1.jpg" class="d-block w-100" alt="News 1">
+                    <!-- Add caption or additional content for the first news item if needed -->
+                </div>
+                <div class="carousel-item">
+                    <img src="http://www2.palomar.edu/telescope/wp-content/uploads/2015/03/LIFE_COLLEGE-VIDEO-GAMERS_TB.jpg" class="d-block w-100" alt="News 2">
+                    <!-- Add caption or additional content for the second news item if needed -->
+                </div>
+                <div class="carousel-item active">
+                    <img src="https://image.cnbcfm.com/api/v1/image/105485043-1538560460468gettyimages-1042695306.jpeg?v=1541788519" class="d-block w-100" alt="News3">
+                    <!-- Add caption or additional content for the second news item if needed -->
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br>
+<!-- Purchase Section with Game Cards -->
+<!-- Purchase Section with Game Cards -->
+<section id="purchase" class="purchase-section">
+    <div class="container">
+        <h2 class="text-center mb-4">Online Video Games for Purchase</h2>
+        <div class="row">
+            <!-- Game Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/bANjQqUVgvM/maxresdefault.jpg" class="card-img-top" alt="Game 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Epic Adventure</h5>
+                        <!-- <p class="card-text">Embark on an epic journey in this action-packed adventure game.</p> -->
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Game Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_MayheminSingleValley_FluxscopicLtd_S1_2560x1440-bb2cf9bdef08d8f641577d28efa3abd9" class="card-img-top" alt="Game 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Virtual Mayhem</h5>
+                        <!-- <p class="card-text">Dive into virtual chaos and experience the thrill of intense battles.</p> -->
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Game Card 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71pKIxkcSRL._AC_SL1500_.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Code Mastermind</h5>
+                        <!-- <p class="card-text">Unleash your coding skills in this challenging game development experience.</p> -->
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Game Card 4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.igT8GC4WGWepQ4WBsVyIgQHaEK&pid=Api&P=0&h=180" class="card-img-top" alt="Game 4">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Galactic Conquest</h5>
+                        <!-- <p class="card-text">Conquer galaxies and lead your space empire to victory in this strategy game.</p> -->
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Game Card 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://neofusion.com.br/wp-content/uploads/2021/03/Final-Fantasy-USA-Mystic-Quest-Box-Front-scaled-e1615217996888.jpg" class="card-img-top" alt="Game 5">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Mystic Quest</h5>
+                        <!-- <p class="card-text">Embark on a mystical adventure and uncover the secrets of an ancient world.</p> -->
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+   
+<!-- Social Media Section -->
+
+<section id="social-media" class="social-media-section">
+    <br><br><br><br><br><br><br><br>
+    <center>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.ktwOHMeqjB9YCeEABHDqgwHaEK&pid=Api&P=0&h=180">
+    </center>
+    <h1>
+        <center>
+    <em>
+        these are our social media handles
+    </em></center></h1>
+    <div class="container text-center" style="margin-top: 50px;"> <!-- Add margin-top style -->
+
+        <h2 class="mb-4">Follow Us on Social Media</h2>
+        <div class="row justify-content-center">
+            <!-- Facebook Icon -->
+            <div class="col-md-2">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook h1 text-primary"></i>
+                </a>
+            </div>
+            <!-- Twitter Icon -->
+            <div class="col-md-2">
+                <a href="https://twitter.com/" target="_blank">
+                    <i class="bi bi-twitter h1 text-info"></i>
+                </a>
+            </div>
+            <!-- Instagram Icon -->
+            <div class="col-md-2">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="bi bi-instagram h1 text-danger"></i>
+                </a>
+            </div>
+            <!-- LinkedIn Icon -->
+            <div class="col-md-2">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="bi bi-linkedin h1 text-primary"></i>
+                </a>
+            </div>
+            <!-- YouTube Icon -->
+            <div class="col-md-2">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="bi bi-youtube h1 text-danger"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <br><br><br><br><br><br><br><br>
+
+    <div class="container text-center">
+        <h2 class="mb-4">Contact Us</h2>
+        
+        <!-- Contact Form -->
+        <form action="#" method="post">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- Name Input -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    
+                    <!-- Email Input -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    
+                    <!-- Message Textarea -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy;  All rights reserved.</p>
+    </footer>
+
+    <!-- Add your scripts here -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+    <script>
+                AOS.init();
+        function scrollToSection(sectionId) {
+            $('html, body').animate({
+                scrollTop: $('#' + sectionId).offset().top
+            }, 1000);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.parallax-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+#hero {
+    position: relative;
+    overflow: hidden; /* Ensure the video doesn't overflow its container */
+}
+
+#hero video {
+    width: 100vw; /* Make the video full width of the viewport */
+    height: 100vh; /* Make the video full height of the viewport */
+    object-fit: cover;
+}
+
+/* Add more styles and sections as needed */
